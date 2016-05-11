@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7G-DW-ise">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Puns" id="vpF-zQ-1fc">
+                                        <connections>
+                                            <action selector="switchViews:" destination="BYZ-38-t0r" id="ZjV-4Y-9Qg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="J5p-PY-RGa"/>
+                                    <barButtonItem title="Dad" id="wIq-QH-nYu">
+                                        <connections>
+                                            <action selector="switchViews:" destination="BYZ-38-t0r" id="YeJ-cV-T2t"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="BmS-qc-bAl"/>
+                                    <barButtonItem title="Marriage" id="vkZ-wE-ZBw">
+                                        <connections>
+                                            <action selector="switchViews:" destination="BYZ-38-t0r" id="uOs-nf-WGE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a category above and get ready to laugh! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhN-lm-RN8">
+                                <rect key="frame" x="115" y="315.5" width="370" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to Wei-Jen's iKid app." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cI-CQ-dF4">
+                                <rect key="frame" x="177" y="289" width="242" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RNo-3G-1iw">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="k2H-gk-bJX"/>
+                                    <barButtonItem title="Item" id="x4r-cw-rx3">
+                                        <connections>
+                                            <action selector="switchViews:" destination="BYZ-38-t0r" id="L5R-Fa-UrC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RNo-3G-1iw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="1Xd-dm-DD8"/>
+                            <constraint firstItem="NhN-lm-RN8" firstAttribute="top" secondItem="9cI-CQ-dF4" secondAttribute="bottom" constant="5" id="5EP-X9-45S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f7G-DW-ise" secondAttribute="trailing" constant="-20" id="CKV-zM-TZH"/>
+                            <constraint firstItem="NhN-lm-RN8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ehb-Vh-qGB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RNo-3G-1iw" secondAttribute="trailing" constant="-20" id="Hlv-R1-3K0"/>
+                            <constraint firstItem="9cI-CQ-dF4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PBf-cJ-x9F"/>
+                            <constraint firstItem="f7G-DW-ise" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="YfV-EK-fMw"/>
+                            <constraint firstItem="f7G-DW-ise" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="gTO-NI-TSc"/>
+                            <constraint firstItem="9cI-CQ-dF4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hT3-6D-s1g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RNo-3G-1iw" secondAttribute="bottom" id="rQq-Gr-kfB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="toolBar" destination="RNo-3G-1iw" id="l7x-8p-L8x"/>
+                        <outlet property="toolbarItem" destination="x4r-cw-rx3" id="p93-2e-MP7"/>
+                        <outlet property="welcomeLine1" destination="9cI-CQ-dF4" id="0rj-62-0hA"/>
+                        <outlet property="welcomeLine2" destination="NhN-lm-RN8" id="eUH-J7-0LY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15" y="296"/>
+        </scene>
+        <!--Joke View Controller-->
+        <scene sceneID="nLV-9H-Ys9">
+            <objects>
+                <viewController storyboardIdentifier="Joke" id="dun-O6-9Qj" customClass="JokeViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aU4-Oc-bbK"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Bv-US-VO0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tlF-6U-rQZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGd-Mq-Tip">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Puns" id="TVh-y9-XiP">
+                                        <connections>
+                                            <action selector="switchViews:" destination="dun-O6-9Qj" id="0B3-u8-qrQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gFR-pe-38b"/>
+                                    <barButtonItem title="Dad" id="pb9-OW-jD0">
+                                        <connections>
+                                            <action selector="switchViews:" destination="dun-O6-9Qj" id="t2Z-oc-rGt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lfd-fK-mlx"/>
+                                    <barButtonItem title="Marriage" id="1s0-Hv-eCH"/>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SR0-O2-eNS">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aJS-Sz-WQS"/>
+                                    <barButtonItem title="Punchline" id="K8R-Eh-YKf">
+                                        <connections>
+                                            <action selector="switchViews:" destination="dun-O6-9Qj" id="mkZ-Vq-GgY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwM-hs-pmM">
+                                <rect key="frame" x="282" y="289" width="36.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" identifier="Joke"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="WGd-Mq-Tip" secondAttribute="trailing" constant="-20" id="4kN-L8-Ix7"/>
+                            <constraint firstItem="9Bv-US-VO0" firstAttribute="top" secondItem="SR0-O2-eNS" secondAttribute="bottom" id="EuQ-Vd-CQR"/>
+                            <constraint firstItem="WGd-Mq-Tip" firstAttribute="top" secondItem="tlF-6U-rQZ" secondAttribute="topMargin" id="HRB-j9-qUh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SR0-O2-eNS" secondAttribute="trailing" constant="-20" id="IDm-St-i6u"/>
+                            <constraint firstItem="SR0-O2-eNS" firstAttribute="leading" secondItem="tlF-6U-rQZ" secondAttribute="leadingMargin" constant="-20" id="Nd8-q1-YbK"/>
+                            <constraint firstItem="WGd-Mq-Tip" firstAttribute="leading" secondItem="tlF-6U-rQZ" secondAttribute="leadingMargin" constant="-20" id="Vxo-Zr-Z7q"/>
+                            <constraint firstItem="iwM-hs-pmM" firstAttribute="centerX" secondItem="tlF-6U-rQZ" secondAttribute="centerX" id="pPS-Dd-3zG"/>
+                            <constraint firstItem="iwM-hs-pmM" firstAttribute="centerY" secondItem="tlF-6U-rQZ" secondAttribute="centerY" id="txd-Lf-nYt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="joke" destination="iwM-hs-pmM" id="2ZB-P4-jjQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJl-2D-Hrn" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893" y="310"/>
+        </scene>
+        <!--Punchline View Controller-->
+        <scene sceneID="eWG-LW-Loa">
+            <objects>
+                <viewController storyboardIdentifier="Punchline" id="tK2-sW-Pdg" customClass="PunchlineViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ydh-Fg-y28"/>
+                        <viewControllerLayoutGuide type="bottom" id="PrN-52-y23"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WED-kT-wr2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhW-rJ-cBa">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Puns" id="vfC-iQ-kAH">
+                                        <connections>
+                                            <action selector="createJoke:" destination="tK2-sW-Pdg" id="qvE-nX-Sba"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mhS-Or-0wv"/>
+                                    <barButtonItem title="Dad" id="rcL-Ka-xxw">
+                                        <connections>
+                                            <action selector="createJoke:" destination="tK2-sW-Pdg" id="Kla-NR-CE1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="8cM-TM-wVi"/>
+                                    <barButtonItem title="Marriage" id="gNL-vz-FMT">
+                                        <connections>
+                                            <action selector="createJoke:" destination="tK2-sW-Pdg" id="R4P-wp-R4x"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbI-K7-pXN">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="UgZ-kA-VKj"/>
+                                    <barButtonItem title="Home" id="9nz-hu-Arw">
+                                        <connections>
+                                            <action selector="switchViews:" destination="tK2-sW-Pdg" id="nnW-Nb-Cmn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punchline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4h1-lA-kNS">
+                                <rect key="frame" x="263" y="289" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" identifier="Punchline"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dbI-K7-pXN" secondAttribute="trailing" constant="-20" id="55K-c8-fGI"/>
+                            <constraint firstItem="nhW-rJ-cBa" firstAttribute="top" secondItem="WED-kT-wr2" secondAttribute="topMargin" id="B54-Ah-s9i"/>
+                            <constraint firstItem="PrN-52-y23" firstAttribute="top" secondItem="dbI-K7-pXN" secondAttribute="bottom" id="FaP-e8-uOI"/>
+                            <constraint firstItem="4h1-lA-kNS" firstAttribute="centerY" secondItem="WED-kT-wr2" secondAttribute="centerY" id="Qxk-xO-HyR"/>
+                            <constraint firstItem="4h1-lA-kNS" firstAttribute="centerX" secondItem="WED-kT-wr2" secondAttribute="centerX" id="UAc-iI-36O"/>
+                            <constraint firstItem="nhW-rJ-cBa" firstAttribute="leading" secondItem="WED-kT-wr2" secondAttribute="leadingMargin" constant="-20" id="XM3-gz-R3q"/>
+                            <constraint firstItem="4h1-lA-kNS" firstAttribute="centerX" secondItem="WED-kT-wr2" secondAttribute="centerX" id="aQ5-k5-OS9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nhW-rJ-cBa" secondAttribute="trailing" constant="-20" id="mYx-yN-HR0"/>
+                            <constraint firstItem="dbI-K7-pXN" firstAttribute="leading" secondItem="WED-kT-wr2" secondAttribute="leadingMargin" constant="-20" id="ndv-ck-D8A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="punchline" destination="4h1-lA-kNS" id="AKX-3V-B7G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZP-ft-ugb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="310"/>
+        </scene>
+    </scenes>
+</document>
